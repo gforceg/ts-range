@@ -1,0 +1,5 @@
+*.ts
+*.spec.ts
+!*.d.ts
+package-lock.json
+.gitignore
