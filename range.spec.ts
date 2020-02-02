@@ -33,6 +33,9 @@ describe('range', () => {
 
         expect(range(0, 10, -1))
         .toEqual([])
+
+        expect(range(-5))
+        .toEqual([])
     })
 
     test('it can go backwards', () => {
