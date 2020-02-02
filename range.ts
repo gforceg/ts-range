@@ -1,31 +1,29 @@
-export function arrSize(start: number, end: number, step: number) {
+export function arrSize(a: number, b: number, step: number) {
     const size = Math.floor(
-        Math.abs((Math.max(start, end) - Math.min(start, end)) / step)
+        Math.abs((Math.max(a, b) - Math.min(a, b)) / step)
     )
     return size
 }
 
-export function range(start: number, end?: number, step: number = 1) {
+export function range(start: number, stop?: number, step: number = 1) {
     let flip = false
     if (step === 0) return []
 
-    if (end === undefined) {
-        end = start
+    if (stop === undefined) {
+        stop = start
         start = 0
     }
 
-    if (end < start && step > 0) return []
-    if (end > start && step < 0) return []
-    else if (end < start) {
-        let tEnd = end
-        end = start
+    if (stop < start && step > 0) return []
+    if (stop > start && step < 0) return []
+    else if (stop < start) {
+        let tEnd = stop
+        stop = start
         start = tEnd
         flip = true
     }
 
-    // console.dir((Math.max(start, end) - Math.min(start, end)) / step)
-
-    const arr = new Array(arrSize(start, end, step))
+    const arr = new Array(arrSize(start, stop, step))
     .fill(undefined)
     .map((x, i) => {
         return start + Math.abs((i * step)) + Number(flip)
