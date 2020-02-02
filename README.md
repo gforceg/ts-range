@@ -1,4 +1,4 @@
-# Range
+# of-range
 
 A function that mimicks the [python range built-in](https://docs.python.org/3/library/stdtypes.html?highlight=range#range)
 

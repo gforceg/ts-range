@@ -1,5 +1,5 @@
 {
-  "name": "ts-range",
+  "name": "of-range",
   "version": "1.0.0",
   "description": "javascript function that mimics python range built-in",
   "homepage": "https://github.com/gforceg/ts-range#readme",
