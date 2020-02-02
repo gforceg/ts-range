@@ -1,4 +1,4 @@
-export function arrSize(a: number, b: number, step: number) {
+function arrSize(a: number, b: number, step: number) {
     const size = Math.floor(
         Math.abs((Math.max(a, b) - Math.min(a, b)) / step)
     )
