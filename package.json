@@ -1,7 +1,12 @@
 {
   "name": "ts-range",
   "version": "1.0.0",
-  "description": "",
+  "description": "javascript function that mimics python range built-in",
+  "homepage": "https://github.com/gforceg/ts-range#readme",
+  "repository": {
+    "url": "https://github.com/gforceg/ts-range#readme",
+    "email": "greghedin@gmail.com"
+  },
   "main": "range.js",
   "scripts": {
     "start": "run-p build:watch test:watch",
@@ -11,7 +16,7 @@
     "test:watch": "jest --watch"
   },
   "author": "Greg Hedin",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@types/jest": "^25.1.1",
     "@types/node": "^13.7.0",
